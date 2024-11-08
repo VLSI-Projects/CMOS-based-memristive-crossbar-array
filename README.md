@@ -20,7 +20,7 @@ in various computing environments.
 
 ## Installation of Xschem, Skywater130 PDK and Ngspice
 
-## About Xschem
+### About Xschem
 Xschem is a schematic capture program, it allows creation of hierarchical representation of circuits with a top down approach . By focusing on interfaces, hierarchy and instance properties a complex system can be described in terms of simpler building blocks.
 ### Installing xschem
 
@@ -29,67 +29,67 @@ Open your terminal and type the following to install Ngspice
 ```
 $  sudo apt-get install -y xschem
 ```
-### git Installation
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install git-all
+#### git Installation
+$  sudo apt-get update
+$  sudo apt-get upgrade
+$  sudo apt-get install git-all
 
 
 To clone the Xschem from GitHub repo:
-git clone https://github.com/StefanSchippers/xschem.git xschem-git
-cd xschem-git
+$  git clone https://github.com/StefanSchippers/xschem.git xschem-git
+$  cd xschem-git
 
-### Package Installation
+#### Package Installation
 
-sudo apt-get install libx11-6
-sudo apt-get install libx11-dev
-sudo apt-get install libxrender1
-sudo apt-get install libxrender-dev
-sudo apt-get install libxcb1
-sudo apt-get install libx11-xcb-dev
-sudo apt-get install libcairo2
-sudo apt-get install libcairo2-dev
-sudo apt-get install tcl8.6
-sudo apt-get install tcl8.6-dev
-sudo apt-get install tk8.6
-sudo apt-get install tk8.6-dev
-sudo apt-get install flex
-sudo apt-get install bison
-sudo apt-get install libxpm4
-sudo apt-get install libxpm-dev
-sudo apt-get install gawk
-sudo apt-get install mawk
-sudo apt-get install tcl-tclreadline
-sudo apt-get install xterm
+$  sudo apt-get install libx11-6
+$  sudo apt-get install libx11-dev
+$  sudo apt-get install libxrender1
+$  sudo apt-get install libxrender-dev
+$  sudo apt-get install libxcb1
+$  sudo apt-get install libx11-xcb-dev
+$  sudo apt-get install libcairo2
+$  sudo apt-get install libcairo2-dev
+$  sudo apt-get install tcl8.6
+$  sudo apt-get install tcl8.6-dev
+$  sudo apt-get install tk8.6
+$  sudo apt-get install tk8.6-dev
+$  sudo apt-get install flex
+$  sudo apt-get install bison
+$  sudo apt-get install libxpm4
+$  sudo apt-get install libxpm-dev
+$  sudo apt-get install gawk
+$  sudo apt-get install mawk
+$  sudo apt-get install tcl-tclreadline
+$  sudo apt-get install xterm
 
-### install xschem
+#### install xschem
 
-./configure
-sudo -i
-cd /home/parallels/Desktop/xschem-git
-make
-make install
+$  ./configure
+$  sudo -i
+$  cd /home/parallels/Desktop/xschem-git
+$  make
+$  make install
 
 ### Install Skywater130 PDK
-cd /home/parallels/Desktop
-git clone https://github.com/google/skywater-pdk
-cd skywater-pdk
-git submodule init libraries/sky130_fd_io/latest
-git submodule init libraries/sky130_fd_pr/latest
-git submodule init libraries/sky130_fd_sc_hd/latest
-git submodule init libraries/sky130_fd_sc_hdll/latest
+$  cd /home/parallels/Desktop
+$  git clone https://github.com/google/skywater-pdk
+$  cd skywater-pdk
+$  git submodule init libraries/sky130_fd_io/latest
+$  git submodule init libraries/sky130_fd_pr/latest
+$  git submodule init libraries/sky130_fd_sc_hd/latest
+$  git submodule init libraries/sky130_fd_sc_hdll/latest
 
 # optional -----------
-git submodule init libraries/sky130_fd_sc_hs/latest
-git submodule init libraries/sky130_fd_sc_ms/latest
-git submodule init libraries/sky130_fd_sc_ls/latest
-git submodule init libraries/sky130_fd_sc_lp/latest
-git submodule init libraries/sky130_fd_sc_hvl/latest
+$  git submodule init libraries/sky130_fd_sc_hs/latest
+$  git submodule init libraries/sky130_fd_sc_ms/latest
+$  git submodule init libraries/sky130_fd_sc_ls/latest
+$  git submodule init libraries/sky130_fd_sc_lp/latest
+$  git submodule init libraries/sky130_fd_sc_hvl/latest
 # --------------------
 
 # You can skip the above optional command. But the following two commands must be run.
-git submodule update
-make timing
+$  git submodule update
+$  make timing
 
 ## About Ngspice 
 Ngspice is an open source mixed-signal circuit simulator.
@@ -103,20 +103,20 @@ $  sudo apt-get install -y ngspice
 ```
 
 
- ### download Ngspice from its git rep:
+ #### download Ngspice from its git rep:
  
-cd /home/parallels/Desktop
-git clone https://github.com/ngspice/ngspice.git
-cd ngspice
-./autogen.sh --adms
-mkdir release
-cd release
+$  cd /home/parallels/Desktop
+$  git clone https://github.com/ngspice/ngspice.git
+$  cd ngspice
+$  ./autogen.sh --adms
+$  mkdir release
+$  cd release
 
-### Configure and install Ngspice:
+#### Configure and install Ngspice:
 
-../configure  --with-x --with-readline=yes --disable-debug
-make
-sudo make install
+$  ../configure  --with-x --with-readline=yes --disable-debug
+$  make
+$  sudo make install
 
 
 
