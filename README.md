@@ -7,18 +7,9 @@ This project demonstrates a hardware neural network architecture using a memrist
 2. Simulation in ngspice to verify the circuit functionality
 3. Transient analysis for response verification
 ## Features
-1. Memristive Crossbar Array: Analog matrix multiplication using memristive properties for weight storage.
-2. CMOS Activation: A CMOS inverter pair implements the tanh activation function.
-3. Simulation with ngspice: Schematic and performance analysis to verify the activation and analog computation.
+The project features a memristive crossbar array that enables analog matrix multiplication by utilizing the unique properties of memristive devices for weight storage.A CMOS inverter pair is used to implement the tanh activation function, providing a hardware-based analog solution for non-linear activation in neural networks.The design is fully simulated with ngspice, where schematic and performance analyses are conducted to verify the functionality of the activation and analog computation, ensuring the system operates as intended.
 ## Circuit Design
-The crossbar array has the following configuration:
-
-1. Word Line (WL) connected to the gates of two nFETs, receiving a pulse wave input.
-2. Source Line (SL) connected to the source of one nFET and the drain of the other, receiving the same pulse input as WL.
-3. Resistor in series with the drain-source path, with the opposite end named Bit Line (BL).
-4. BL connected to a CMOS inverter, which feeds into another inverter for output.
-5. This design structure enables analog multiplication and a hardware-based activation function suitable for neuromorphic and edge computing applications.
-
+The crossbar array is configured with the Word Line (WL) connected to the gates of two nFETs, receiving a pulse wave input. The Source Line (SL) is connected to the source of one nFET and the drain of the other, both receiving the same pulse input as WL. A resistor is placed in series with the drain-source path, and its opposite end is named the Bit Line (BL). The BL is connected to a CMOS inverter, which in turn feeds into another inverter for the final output. This design structure allows for analog matrix multiplication and incorporates a hardware-based activation function, making it well-suited for neuromorphic computing and edge AI applications.
 ## Installation of Xschem, Skywater130 PDK and Ngspice
 
 ### About Xschem
