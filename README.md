@@ -52,7 +52,7 @@ The crossbar array is configured with the Word Line (WL) connected to the gates 
 ![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/171f45f58bd7cc5d91970f1486e561036c01e376/Ngspice%20simulation-Gate%20Voltage.png)
 
 ## Transient Response of Source Line (SL) Voltage
-![Image_Alt]()
+![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/5b162fc341d05b60885a1460e9567ca3941d9713/Ngspice%20simulation-Vds.png)
 ## Transient Response of Bit Line (BL) Voltage
 ![Image_Alt]()
 ## Voltage Response of Word Line (WL) and Source Line (SL) in Memristive Crossbar Array
