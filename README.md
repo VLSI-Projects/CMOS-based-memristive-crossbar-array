@@ -56,7 +56,7 @@ The crossbar array is configured with the Word Line (WL) connected to the gates 
 ## Transient Response of Bit Line (BL) Voltage
 ![Image_Alt]()
 ## Voltage Response of Word Line (WL) and Source Line (SL) in Memristive Crossbar Array
-![Image_Alt]()
+![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/b626a996f4d932d3e2ce4b1dedee3e620a8b7199/Ngspice%20simulation-VG%20vs%20VDS.png)
 ## Transient Response of Memristive Crossbar Array with CMOS Inverter Activation
 ![Image_Alt]()
 ## Installation of Xschem, Skywater130 PDK and Ngspice
