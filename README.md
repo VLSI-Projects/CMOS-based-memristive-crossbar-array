@@ -219,9 +219,9 @@ In conclusion, this project demonstrates the integration of a memristive crossba
 6. To integrate on-chip training using memristive learning rules to allow the network to learn and adapt over time, supporting efficient hardware-based machine 
    learning.
 
-## Contributors
+## Contributor
 
-- **Adithya Das** 
+- **P K Adithya Das , Student, Digital University Kerala** 
   
 
 
