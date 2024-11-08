@@ -33,7 +33,7 @@ The project features a memristive crossbar array that enables analog matrix mult
 
 ## Circuit Design
 The crossbar array is configured with the Word Line (WL) connected to the gates of two nFETs, receiving a pulse wave input. The Source Line (SL) is connected to the source of one nFET and the drain of the other, both receiving the same pulse input as WL. A resistor is placed in series with the drain-source path, and its opposite end is named the Bit Line (BL). The BL is connected to a CMOS inverter, which in turn feeds into another inverter for the final output. This design structure allows for analog matrix multiplication and incorporates a hardware-based activation function, making it well-suited for neuromorphic computing and edge AI applications.
-
+![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/9dd6a3d4d6fbff22793eb6c26c31240f93b2dabb/XSCHEM-SCHEMATIC.png)
 ### Advantages of this design
 1. Enables fast, analog matrix multiplication for neural networks.
 2. Allows for easy expansion to multi-layer neural networks with minimal chip area increase.
