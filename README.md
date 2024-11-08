@@ -46,21 +46,52 @@ The crossbar array is configured with the Word Line (WL) connected to the gates 
 5. Implements tanh activation function directly in hardware for faster performance.
 6. Mimics biological neural networks for efficient processing.
 7. Ideal for low-power, fast processing in edge AI applications.
+8. 
 ## Output Voltage (Vout) Behavior in Memristive Crossbar Array with CMOS Activation
+
 ![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/bac483381f6133b9042a4d3153c6e63834da6112/Ngspice%20simulation-output%20voltage%20graph.png)
+
+ The Vout voltage represents the final output of the system after the Bit Line (BL) voltage is passed through the CMOS inverter pair, which implements the tanh activation function.The Vout provides the result of the neural network computation, with the tanh activation function introducing non-linearity to the system.
+ 
 ## Transient Response of Word Line (WL) Voltage
+
 ![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/171f45f58bd7cc5d91970f1486e561036c01e376/Ngspice%20simulation-Gate%20Voltage.png)
 
+The Word Line (WL) voltage shows the input signal behavior in response to the pulse or voltage step applied to the WL.The waveform likely shows a square pulse or a sharp transition, as it's used to control the gates of the nFETs in the memristive crossbar array.WL voltage initiates the computation by controlling the rows of the crossbar array, determining the active memristive devices for matrix-vector multiplication. time period of the pulse width and the rise/fall times can affect the performance of the overall circuit.
+
 ## Transient Response of Source Line (SL) Voltage
+
 ![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/5b162fc341d05b60885a1460e9567ca3941d9713/Ngspice%20simulation-Vds.png)
+
+The Source Line (SL) voltage typically mirrors the behavior of WL, as it is fed with a similar pulse signal in the crossbar array.Like WL, the SL voltage will likely show a square wave pattern with sharp transitions.The SL voltage helps define the current flow through the memristive devices in the crossbar. The relationship between WL and SL determines the operation of the memristive crossbar array.Variations in the SL voltage can affect the level of charge stored in the memristive devices and influence the output at the Bit Line (BL).
+
+
 ## Transient Response of Bit Line (BL) Voltage
+
 ![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/1f3e9ca04c0e82666318c4d539478f6f97d1dfcf/Memristive%20crossbar%20array%20output.png)
+
+ The Bit Line (BL) voltage is the output of the crossbar array after the analog matrix multiplication is performed by the memristive devices.The waveform may show a gradual change depending on the stored resistance values in the memristive devices, influenced by the applied WL and SL voltages.BL voltage reflects the result of the computation performed by the memristive devices, which is then passed through the CMOS inverter pair for activation.Voltage on the BL depends on the conductance of the memristive devices, which in turn is affected by the voltage applied to the WL and SL. A delay might be observed due to the nature of the memristive devices, which can exhibit non-idealities such as slow resistance change or settling time.
+
+
 ## Voltage Response of Word Line (WL) and Source Line (SL) in Memristive Crossbar Array
+
 ![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/b626a996f4d932d3e2ce4b1dedee3e620a8b7199/Ngspice%20simulation-VG%20vs%20VDS.png)
+
+ WL and SL voltages typically exhibit a similar pulse-like behavior, as both are driven by pulse signals to control the operation of the memristive crossbar array.These lines are often synchronized, meaning that the WL and SL receive the same pulse input or are triggered at the same time. This synchronization ensures that the correct memristive devices are activated during computation.Both the WL and SL voltages are likely to show square wave patterns or sharp transitions due to their role in controlling the nFETs and memristive devices.The width of the pulse (i.e., how long the signal stays high or low) can influence how long the memristive devices are engaged during each computation cycle. WL pulse typically controls the word (row) selection in the crossbar, while the SL pulse is used to control the source (column) selection.
+
 ## Transient Response of Bit Line (BL) and Output Voltage (Vout)
+
 ![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/1f3bb36093543da1a87cef23277d8ed36c37e437/Ngspice%20Simulation-BL.png)
+
+The transient response plot of the pulse input and BL output Vout demonstrates the memristive crossbar’s dynamic behavior. With each input pulse, Vout responds accordingly, highlighting the activation by the CMOS inverter. 
+
 ## Transient Response of Memristive Crossbar Array with CMOS Inverter Activation
+
 ![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/3871878a86c40d67c6c9c2b502f487a7772df9fc/Input%20vs%20Output.png)
+
+WL (Word Line) and SL (Source Line) receive synchronized pulse inputs, acting as control signals for activating the memristive elements in the crossbar.
+BL (Bit Line) voltage reflects the output from the memristive crossbar, showing an analog response influenced by the WL and SL inputs.Vout following BL, shows the processed output after passing through the CMOS inverter, illustrating the activation stage.
+
 ## Installation of Xschem, Skywater130 PDK and Ngspice
 
 ### About Xschem
