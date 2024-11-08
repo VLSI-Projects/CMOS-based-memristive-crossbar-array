@@ -47,7 +47,7 @@ The crossbar array is configured with the Word Line (WL) connected to the gates 
 6. Mimics biological neural networks for efficient processing.
 7. Ideal for low-power, fast processing in edge AI applications.
 ## Output Voltage of Memristive Crossbar Array with tanh Activation Function
-![Image_Alt]()
+![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/bac483381f6133b9042a4d3153c6e63834da6112/Ngspice%20simulation-output%20voltage%20graph.png)
 ## Transient Response of Word Line (WL) Voltage
 ![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/171f45f58bd7cc5d91970f1486e561036c01e376/Ngspice%20simulation-Gate%20Voltage.png)
 
