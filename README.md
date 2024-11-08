@@ -46,7 +46,7 @@ The crossbar array is configured with the Word Line (WL) connected to the gates 
 5. Implements tanh activation function directly in hardware for faster performance.
 6. Mimics biological neural networks for efficient processing.
 7. Ideal for low-power, fast processing in edge AI applications.
-8. 
+
 ## Output Voltage (Vout) Behavior in Memristive Crossbar Array with CMOS Activation
 
 ![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/bac483381f6133b9042a4d3153c6e63834da6112/Ngspice%20simulation-output%20voltage%20graph.png)
