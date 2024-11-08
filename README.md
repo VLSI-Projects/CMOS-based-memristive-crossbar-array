@@ -46,7 +46,7 @@ The crossbar array is configured with the Word Line (WL) connected to the gates 
 5. Implements tanh activation function directly in hardware for faster performance.
 6. Mimics biological neural networks for efficient processing.
 7. Ideal for low-power, fast processing in edge AI applications.
-## Output Voltage of Memristive Crossbar Array with tanh Activation Function
+## Output Voltage (Vout) Behavior in Memristive Crossbar Array with CMOS Activation
 ![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/bac483381f6133b9042a4d3153c6e63834da6112/Ngspice%20simulation-output%20voltage%20graph.png)
 ## Transient Response of Word Line (WL) Voltage
 ![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/171f45f58bd7cc5d91970f1486e561036c01e376/Ngspice%20simulation-Gate%20Voltage.png)
@@ -58,7 +58,7 @@ The crossbar array is configured with the Word Line (WL) connected to the gates 
 ## Voltage Response of Word Line (WL) and Source Line (SL) in Memristive Crossbar Array
 ![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/b626a996f4d932d3e2ce4b1dedee3e620a8b7199/Ngspice%20simulation-VG%20vs%20VDS.png)
 ## Transient Response of Memristive Crossbar Array with CMOS Inverter Activation
-![Image_Alt]()
+![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/3871878a86c40d67c6c9c2b502f487a7772df9fc/Input%20vs%20Output.png)
 ## Installation of Xschem, Skywater130 PDK and Ngspice
 
 ### About Xschem
