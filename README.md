@@ -49,7 +49,7 @@ The crossbar array is configured with the Word Line (WL) connected to the gates 
 ## Output Voltage of Memristive Crossbar Array with tanh Activation Function
 ![Image_Alt]()
 ## Transient Response of Word Line (WL) Voltage
-![Image_Alt]()
+![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/171f45f58bd7cc5d91970f1486e561036c01e376/Ngspice%20simulation-Gate%20Voltage.png)
 
 ## Transient Response of Source Line (SL) Voltage
 ![Image_Alt]()
