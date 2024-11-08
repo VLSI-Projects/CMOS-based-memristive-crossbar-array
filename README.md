@@ -30,17 +30,19 @@ Open your terminal and type the following to install Ngspice
 $  sudo apt-get install -y xschem
 ```
 #### git Installation
+```
 $  sudo apt-get update
 $  sudo apt-get upgrade
 $  sudo apt-get install git-all
-
+```
 
 To clone the Xschem from GitHub repo:
+```
 $  git clone https://github.com/StefanSchippers/xschem.git xschem-git
 $  cd xschem-git
-
+```
 #### Package Installation
-
+```
 $  sudo apt-get install libx11-6
 $  sudo apt-get install libx11-dev
 $  sudo apt-get install libxrender1
@@ -61,16 +63,17 @@ $  sudo apt-get install gawk
 $  sudo apt-get install mawk
 $  sudo apt-get install tcl-tclreadline
 $  sudo apt-get install xterm
-
+```
 #### install xschem
-
+```
 $  ./configure
 $  sudo -i
 $  cd /home/parallels/Desktop/xschem-git
 $  make
 $  make install
-
+```
 ### Install Skywater130 PDK
+```
 $  cd /home/parallels/Desktop
 $  git clone https://github.com/google/skywater-pdk
 $  cd skywater-pdk
@@ -78,19 +81,22 @@ $  git submodule init libraries/sky130_fd_io/latest
 $  git submodule init libraries/sky130_fd_pr/latest
 $  git submodule init libraries/sky130_fd_sc_hd/latest
 $  git submodule init libraries/sky130_fd_sc_hdll/latest
-
+```
 # optional -----------
+
+```
 $  git submodule init libraries/sky130_fd_sc_hs/latest
 $  git submodule init libraries/sky130_fd_sc_ms/latest
 $  git submodule init libraries/sky130_fd_sc_ls/latest
 $  git submodule init libraries/sky130_fd_sc_lp/latest
 $  git submodule init libraries/sky130_fd_sc_hvl/latest
 # --------------------
-
+```
 # You can skip the above optional command. But the following two commands must be run.
+```
 $  git submodule update
 $  make timing
-
+```
 ## About Ngspice 
 Ngspice is an open source mixed-signal circuit simulator.
 
@@ -104,20 +110,20 @@ $  sudo apt-get install -y ngspice
 
 
  #### download Ngspice from its git rep:
- 
+``` 
 $  cd /home/parallels/Desktop
 $  git clone https://github.com/ngspice/ngspice.git
 $  cd ngspice
 $  ./autogen.sh --adms
 $  mkdir release
 $  cd release
-
+```
 #### Configure and install Ngspice:
-
+```
 $  ../configure  --with-x --with-readline=yes --disable-debug
 $  make
 $  sudo make install
-
+```
 
 
 
