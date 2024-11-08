@@ -1,22 +1,23 @@
-# CMOS-based-memristive-crossbar-array
-This project presents the design and simulation
-of a CMOS-based static random-access memory (SRAM) cell,
-employing a six-transistor (6T) configuration for efficient data
-storage and retrieval.
+# Memristive Crossbar Array with CMOS Inverter Activation Function
+A project demonstrating a memristive crossbar array integrated with CMOS inverters to implement the tanh activation function for efficient neural network computation. This design explores a hybrid approach to achieve analog computation within a hardware neural network framework, leveraging the advantages of memristive devices and CMOS technology.
+## Introduction
+This project demonstrates a hardware neural network architecture using a memristive crossbar array for efficient parallel computation. A CMOS inverter pair serves as the activation function, approximating the hyperbolic tangent (tanh) non-linearity. This project includes:
 
+Schematic design in Xschem
+Simulation in ngspice to verify the circuit functionality
+Transient analysis for response verification
+## Features
+Memristive Crossbar Array: Analog matrix multiplication using memristive properties for weight storage.
+CMOS Activation: A CMOS inverter pair implements the tanh activation function.
+Simulation with ngspice: Schematic and performance analysis to verify the activation and analog computation.
+## Circuit Design
+The crossbar array has the following configuration:
 
-## A glance at CMOS-based-memristive-crossbar-array with tanh activation function
-Static random-access memory (SRAM) is a crucial compo-
-nent in modern digital systems, offering high-speed data access
-and stability compared to dynamic random-access memory
-(DRAM). This report discusses the design of a CMOS-based
-SRAM cell, specifically a 6T configuration, which is widely
-used in memory arrays. The design integrates access transistors
-and cross-coupled inverters to facilitate robust data storage
-and retrieval capabilities. We aim to explore the operational
-characteristics of the SRAM cell through detailed circuit
-analysis and simulation, highlighting its potential applications
-in various computing environments.
+Word Line (WL) connected to the gates of two nFETs, receiving a pulse wave input.
+Source Line (SL) connected to the source of one nFET and the drain of the other, receiving the same pulse input as WL.
+Resistor in series with the drain-source path, with the opposite end named Bit Line (BL).
+BL connected to a CMOS inverter, which feeds into another inverter for output.
+This design structure enables analog multiplication and a hardware-based activation function suitable for neuromorphic and edge computing applications.
 
 ## Installation of Xschem, Skywater130 PDK and Ngspice
 
@@ -125,18 +126,22 @@ $  make
 $  sudo make install
 ```
 
-
-
+### Transient Analysis
+Open the project file in ngspice.
+Run the following command for transient simulation:
+```
+.tran 100p 10n
+plot v(Vout)
+```
 ## Future Work
 
-1. Improved matching techniques such as Common Centroid / Interdigitisation need to be implemented while laying out the current mirror.
-2. PNR for the designed circuit is yet to performed using the Open Source Tool provided by the OpenROAD project.
-3. Corner Analysis Testing of the bandgap reference circuit is yet to be performed.
-4. The load driving capability needs to be improved by addition of a buffer block such as an OTA or a common drain amplifier.
-5. To adjust the reference voltage resistors must be trimmed using fuses, hence, resistor trimming must be employed in the circuit.
-6. The design must be improved to provide a higher PSRR.
-7. In the future an OTA based bandgap reference circuit will be developed with improved performance characteristics. Also, a second order bandgap reference will be studied and developed, to improve the temperature coefficient.
-8. To solve the problem of unwanted parasitic BJTs being extracted due to the modification made in the Technology File.
+1. To use layout tool like Magic or KLayout to create a physical layout for the design.
+2. To perform post-layout simulation in ngspice (or another tool) to see the effects of parasitics and physical layout on the design's performance.
+3. Implementing a feedback mechanism that enables real-time adjustments to the memristor weights, allowing the array to adapt dynamically.
+4. Focusing on low-power design strategies to make the circuit suitable for edge AI applications by minimizing energy consumption while maintaining efficiency.
+5. Expanding the crossbar array to support multi-layer neural networks, enhancing computational capabilities and enabling more complex operations.
+6. To integrate on-chip training using memristive learning rules to allow the network to learn and adapt over time, supporting efficient hardware-based machine 
+   learning.
 
 ## Contributors
 
