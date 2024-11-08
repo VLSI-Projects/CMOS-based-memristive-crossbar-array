@@ -3,21 +3,21 @@ A project demonstrating a memristive crossbar array integrated with CMOS inverte
 ## Introduction
 This project demonstrates a hardware neural network architecture using a memristive crossbar array for efficient parallel computation. A CMOS inverter pair serves as the activation function, approximating the hyperbolic tangent (tanh) non-linearity. This project includes:
 
-Schematic design in Xschem
-Simulation in ngspice to verify the circuit functionality
-Transient analysis for response verification
+1. Schematic design in Xschem
+2. Simulation in ngspice to verify the circuit functionality
+3. Transient analysis for response verification
 ## Features
-Memristive Crossbar Array: Analog matrix multiplication using memristive properties for weight storage.
-CMOS Activation: A CMOS inverter pair implements the tanh activation function.
-Simulation with ngspice: Schematic and performance analysis to verify the activation and analog computation.
+1. Memristive Crossbar Array: Analog matrix multiplication using memristive properties for weight storage.
+2. CMOS Activation: A CMOS inverter pair implements the tanh activation function.
+3. Simulation with ngspice: Schematic and performance analysis to verify the activation and analog computation.
 ## Circuit Design
 The crossbar array has the following configuration:
 
-Word Line (WL) connected to the gates of two nFETs, receiving a pulse wave input.
-Source Line (SL) connected to the source of one nFET and the drain of the other, receiving the same pulse input as WL.
-Resistor in series with the drain-source path, with the opposite end named Bit Line (BL).
-BL connected to a CMOS inverter, which feeds into another inverter for output.
-This design structure enables analog multiplication and a hardware-based activation function suitable for neuromorphic and edge computing applications.
+1. Word Line (WL) connected to the gates of two nFETs, receiving a pulse wave input.
+2. Source Line (SL) connected to the source of one nFET and the drain of the other, receiving the same pulse input as WL.
+3. Resistor in series with the drain-source path, with the opposite end named Bit Line (BL).
+4. BL connected to a CMOS inverter, which feeds into another inverter for output.
+5. This design structure enables analog multiplication and a hardware-based activation function suitable for neuromorphic and edge computing applications.
 
 ## Installation of Xschem, Skywater130 PDK and Ngspice
 
