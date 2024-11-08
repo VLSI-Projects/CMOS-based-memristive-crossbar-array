@@ -46,9 +46,19 @@ The crossbar array is configured with the Word Line (WL) connected to the gates 
 5. Implements tanh activation function directly in hardware for faster performance.
 6. Mimics biological neural networks for efficient processing.
 7. Ideal for low-power, fast processing in edge AI applications.
+## Output Voltage of Memristive Crossbar Array with tanh Activation Function
+![Image_Alt]()
+## Transient Response of Word Line (WL) Voltage
+![Image_Alt]()
 
-## Voltage at Word Line (WL) or Gate Voltage vs Time in Prelayout Schematic
-
+## Transient Response of Source Line (SL) Voltage
+![Image_Alt]()
+## Transient Response of Bit Line (BL) Voltage
+![Image_Alt]()
+## Voltage Response of Word Line (WL) and Source Line (SL) in Memristive Crossbar Array
+![Image_Alt]()
+## Transient Response of Memristive Crossbar Array with CMOS Inverter Activation
+![Image_Alt]()
 ## Installation of Xschem, Skywater130 PDK and Ngspice
 
 ### About Xschem
