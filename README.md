@@ -51,7 +51,7 @@ The crossbar array is configured with the Word Line (WL) connected to the gates 
 
 ![Image_Alt](https://github.com/NEOGT11/CMOS-based-memristive-crossbar-array/blob/bac483381f6133b9042a4d3153c6e63834da6112/Ngspice%20simulation-output%20voltage%20graph.png)
 
- The Vout voltage represents the final output of the system after the Bit Line (BL) voltage is passed through the CMOS inverter pair, which implements the tanh activation function.The Vout provides the result of the neural network computation, with the tanh activation function introducing non-linearity to the system.
+The transient response of Vout in relation to WL, SL, and BL shows how the circuit dynamically processes input pulses. As pulses are applied to WL and SL, the BL voltage reflects these changes and drives Vout through the CMOS inverter.Vout stabilizes after initial transients, providing a smooth response that indicates the effective functioning of the memristive crossbar and CMOS components under varying input conditions. This response is essential for validating the circuit’s ability to handle analog signal processing in real-time applications.
  
 ## Transient Response of Word Line (WL) Voltage
 
