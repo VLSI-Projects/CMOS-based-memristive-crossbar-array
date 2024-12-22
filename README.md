@@ -1,5 +1,11 @@
 # Memristive Crossbar Array with CMOS Inverter Activation Function
 A project demonstrating a memristive crossbar array integrated with CMOS inverters to implement the tanh activation function for efficient neural network computation. This design explores a hybrid approach to achieve analog computation within a hardware neural network framework, leveraging the advantages of memristive devices and CMOS technology.
+
+## AWARDS
+NIT Circuit Designing and Simulation Hackathon
+Secured 9th position in the nationwide hackathon using open-source tools, held at the National Institute
+of Technology, Jamshedpur (October - November 2024).
+
 ## Introduction
 This project demonstrates a hardware neural network architecture using a memristive crossbar array for efficient parallel computation. A CMOS inverter pair serves as the activation function, approximating the hyperbolic tangent (tanh) non-linearity. This project includes:
 
@@ -236,4 +242,5 @@ In conclusion, this project demonstrates the integration of a memristive crossba
 ## Reference
 - https://www.engineerwikis.com/wikis/installation-of-xschem
 - https://rdcu.be/dZzIK
+
 
