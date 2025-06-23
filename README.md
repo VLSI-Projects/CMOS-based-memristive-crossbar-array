@@ -230,15 +230,6 @@ In conclusion, this project demonstrates the integration of a memristive crossba
 - **P K Adithya Das , Student, Digital University Kerala** 
   
 
-
-
-## Acknowledgments
-
-
-- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
-- Megha R, Student, Digital University Kerala
-
-
 ## Reference
 - https://www.engineerwikis.com/wikis/installation-of-xschem
 - https://rdcu.be/dZzIK
